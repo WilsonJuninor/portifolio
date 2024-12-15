@@ -1,0 +1,276 @@
+/* Import the poppins from Google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --main-color: hsl(184, 100%, 50%);
+    --text-color: #ffffff;
+    --bg-color-01: #1f242d;
+    --bg-color-02: #323946;
+    --color-00: #0000001a;
+
+    /* Extra */
+    --color-01: #999999;
+    --color-02: #009539;
+    --color-03: #7950f2;
+    --color-04: #c00000;
+    --color-05: #232323;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:  none;
+    outline: none;
+    scroll-behavior: smooth;
+
+}
+
+
+html{
+    .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-extralight {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-extrabold {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-black {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-thin-italic {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-extralight-italic {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-light-italic {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-regular-italic {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-medium-italic {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-semibold-italic {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-bold-italic {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-extrabold-italic {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+      .poppins-black-italic {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      
+}
+
+body{
+    background-color: var(--bg-color-01);
+    color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.1rem;
+    background-color: var(--bg-color-01);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+    border: solid 1px var(--bg-color-02);
+
+
+}
+.logo{
+  font-size: 1.7rem;
+  color: var(--text-color);;
+  font-weight: 600;
+  cursor: default;
+  
+}
+/* Aqui está configurando a barra menu */
+.nav a {
+  font-size: 1.2rem;
+  color: var(--text-color);;
+  padding: 0.5rem 1rem;
+  transition: default;
+}
+.nav a:hover{
+  color: var(--main-color);
+}
+section{
+  min-height: 100vh;
+  padding: 6rem 6rem 2rem;
+
+  border: solido px var(--bg-color-02);
+}
+
+span{
+  color: var(--main-color);
+}
+
+.home, .about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home-img, .about-img{
+  display: flex; /* Ativa o Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Ocupa 100% da altura da tela */
+  margin: 0; /* Remove margens */
+ 
+}
+
+.home-img img, .about-img img{
+    width: 10%; /* Ajusta o tamanho da imagem */
+    max-width: 50%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 0.6rem solid transparent; /* Define a largura da borda */
+    border-image: linear-gradient(100deg, transparent 50%, var(--main-color) 100%) 1;
+
+}
+
+.about{
+  background-color: var(--bg-color-02);
+}
+
+.home-content, .about-content{
+  width: 45%
+
+}
+
+.home-content h1, .about-content h1{
+  font-weight: 1000;
+  line-height: 2rem;
+
+  font-size: 2rem; TESTE
+
+}
+
+.home-content h3, .about-content h3{
+  font-weight: 1000;
+  font-size: 1.6rem;
+
+}
+.home-content p, .about-content p{
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+.service h2,
+.portifolio h2,
+.contact h2{
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+
+}
+.service-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+.service-container .service-box{
+  padding: 2rem 1rem 2.5rem;
+  border-radius:1.2rem;
+  text-align: center;
+  border: solid 0.15rem var(--bg-color-01);
+  background-color: var(--bg-color-02);
+  transition: 0.5s ease;
+}
+
+.service-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 25rem;
+  margin-bottom: 1;
+}
+.service-container .service-box:hover{
+  border-color: var(--main-color);
+  transform: scale(1.01);
+
+}
+.service-box i{
+  font-size: 4.3rem;
+  color:var(--main-color)
+}
+.service-box p {
+  margin: 0.5rem;
+  letter-spacing: 0.1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: hidden;
+  text-overflow: ellipsis;
+
+
+}
