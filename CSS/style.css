@@ -127,22 +127,20 @@ body{
     background-color: var(--bg-color-01);
     color: var(--text-color);
 }
-
+/* Aqui está configurando a Barra de fixacao onde tem home ,servico, projetos.. */
 header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.1rem;
-    background-color: var(--bg-color-01);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-
-    border: solid 1px var(--bg-color-02);
-
-
+  position: fixed;                /* Fixa a barra no topo da página */
+  top: 0;                         /* Alinha a barra ao topo */
+  left: 0;                        /* Alinha a barra à esquerda */
+  width: 100%;                    /* A barra ocupa toda a largura da página */
+  padding: 1.1rem;                /* Espaçamento interno */
+  background-color: var(--bg-color-01); /* Cor de fundo da barra */
+  display: flex;                  /* Utiliza o Flexbox para alinhar os itens dentro da barra */
+  justify-content: center; /* Distribui os itens da barra com espaçamento entre eles */
+  align-items: center;            /* Alinha os itens verticalmente ao centro */
+  z-index: 100;                   /* Define a camada da barra para garantir que fique acima de outros elementos */
+  border: solid 1px var(--bg-color-02); /* Adiciona uma borda de 1px ao redor da barra */
+  
 }
 .logo{
   font-size: 1.7rem;
@@ -161,7 +159,8 @@ header{
   background-color: var(--bg-color-01)
 }
 
-/* Aqui está configurando a barra menu */
+
+/* Aqui está configurando HOME */
 .nav a, .nav-responsive a {
   font-size: 1.2rem;
   color: var(--text-color);;
