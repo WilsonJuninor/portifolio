@@ -232,7 +232,7 @@ span{
 }
 
 .service h2,
-.portifolio h2,
+.Projetos h2,
 .contact h2{
   font-size: 2.2rem;
   margin-bottom: 1rem;
@@ -280,21 +280,21 @@ span{
   text-overflow: ellipsis;
 }
 
-.portifolio {
+.Projetos {
   background-color: var(--bg-color-02);
 }
 
-.portifolio-container{
+.Projetos-container{
   display: grid;
   gap: 1.2rem;
   }
 
-  .portifolio-box img{
+  .Projetos-box img{
     width: 100%;
     transition: 0.5s ease;
     }
 
-  .portifolio-box{
+  .Projetos-box{
     position: relative;
     border-radius: 0.6rem;
     box-shadow: 0 0 0.6rem var(--bg-color-01);
@@ -303,12 +303,12 @@ span{
 
   }
 
-  .portifolio-box img:hover{
+  .Projetos-box img:hover{
     transform: scale(1.1);
 
     }
 
-    .portifolio-box .portifolio-layer{
+    .Projetos-box .Projetos-layer{
       position: absolute;
       bottom: o;
       left: 0;
@@ -324,18 +324,18 @@ span{
       transform: translate(30rem);
       transition: 0.5s ease;
     }
-    .portifolio-box .portifolio-layer{
+    .Projetos-box .Projetos-layer{
       transform: translateY(0);
     }
-.portifolio-layer h4{
+.Projetos-layer h4{
   font-size: 1.8rem;
 }
 
-.portifolio-layer p{
+.Projetos-layer p{
   margin:  0.2rem 0 0.5;
 }
 
-.portifolio-layer a{
+.Projetos-layer a{
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -345,7 +345,7 @@ span{
   border-radius: 50%;
 
 }
-.portifolio-layer a.i{ 
+.Projetos-layer a.i{ 
  font-size:  1,2rem;
  color: var(--bg-color-02);
 
@@ -557,7 +557,7 @@ margin-top: 1.2rem;
       width: 60%;
       margin-bottom: 2rem;
   }
-  .portifolio-container{
+  .Projetos-container{
     grid-template-columns: auto auto;
   }
   form .input-box input {
@@ -592,7 +592,7 @@ margin-top: 1.2rem;
  } .home-content h2{
   font-size:  2rem;
  }
- .portifolio-container {
+ .Projetos-container {
   grid-template-columns: auto auto auto;
  }
  
