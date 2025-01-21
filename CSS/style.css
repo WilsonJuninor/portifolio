@@ -182,28 +182,26 @@ span{
 }
 
 .home, .about{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  display: flex; /*;Ativa o Flexbox ( Quando precisa de distribuição dinâmica de espaço entre os itens)*/
+  flex-direction: row;/*Define a direção principal do layout.)*/
+  justify-content: space-evenly;/*Controla o alinhamento dos itens ao longo do eixo principal (no caso, horizontal).*/
   align-items: center;
 }
 
 .home-img, .about-img{
-  display: flex; /* Ativa o Flexbox */
+  display: flex; /* Ativa o Flexbox ( Quando precisa de distribuição dinâmica de espaço entre os itens)*/
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
-  height: 100vh; /* Ocupa 100% da altura da tela */
-  margin: 0; /* Remove margens */
- 
-}
+ }
 
 .home-img img, .about-img img{
-    width: 10%; /* Ajusta o tamanho da imagem */
-    max-width: 50%; /* Garante que a imagem não ultrapasse o contêiner */
+    width: 100%; /* Ajusta o tamanho da imagem */
+    max-width: 70%; /* Garante que a imagem não ultrapasse o contêiner */
     height: auto; /* Mantém a proporção da imagem */
-    border: 0.6rem solid transparent; /* Define a largura da borda */
-    border-image: linear-gradient(100deg, transparent 50%, var(--main-color) 100%) 1;
+    margin-top: -200px; /* Move a imagem para cima */
+    margin-left: -250px; /* Move a imagem para o lado esquerdo */
 
+    
 }
 
 .about{
@@ -215,21 +213,21 @@ span{
 
 }
 
-.home-content h1, .about-content h1{
-  font-weight: 1000;
-  line-height: 2rem;
-
-  font-size: 2rem; TESTE
-
+.home-content h1, .about-content h1 {
+  font-weight: 1000; /* Deixa o texto do h1 bem grosso */
+  line-height: 2rem; /* Define o espaçamento entre as linhas do título como 2rem */
+  font-size: 2rem; /* Define o tamanho da fonte como 2rem */
 }
 
-.home-content h3, .about-content h3{
-  font-weight: 1000;
-  font-size: 1.6rem;
 
+.home-content h3, .about-content h3 {
+  font-weight: 1000; /* Deixa o texto do h3 bem grosso */
+  font-size: 2.2rem; /* Define o tamanho da fonte como 1.6rem */
 }
+
 .home-content p, .about-content p{
-  margin-top: 2rem;
+  margin-top: 1rem;
+  font-size: 1.1rem;
   text-align: justify;
 }
 
