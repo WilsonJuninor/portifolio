@@ -186,7 +186,7 @@ span{
   flex-direction: row;/*Define a direção principal do layout.)*/
   justify-content: space-evenly;/*Controla o alinhamento dos itens ao longo do eixo principal (no caso, horizontal).*/
   align-items: center;
-}
+ }
 
 .home-img, .about-img{
   display: flex; /* Ativa o Flexbox ( Quando precisa de distribuição dinâmica de espaço entre os itens)*/
@@ -195,13 +195,9 @@ span{
  }
 
 .home-img img, .about-img img{
-    width: 100%; /* Ajusta o tamanho da imagem */
-    max-width: 70%; /* Garante que a imagem não ultrapasse o contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-top: -200px; /* Move a imagem para cima */
-    margin-left: -250px; /* Move a imagem para o lado esquerdo */
-
-    
+  width: 100%; /* Ajusta o tamanho da imagem */
+  max-width: 70%; /* Garante que a imagem não ultrapasse o contêiner */
+  height: auto; /* Mantém a proporção da imagem */
 }
 
 .about{
@@ -228,26 +224,28 @@ span{
 .home-content p, .about-content p{
   margin-top: 1rem;
   font-size: 1.1rem;
+  
   text-align: justify;
 }
 
 .service h2,
 .Projetos h2,
-.contact h2{
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-  text-align: center;
+.contact h2{ /* ORGANIZANDO OS TEXTO QUE SÃO Considerado h2. */
+  font-size: 2.2rem; /* Define o tamanho da fonte como 2.2 rem (relativo ao tamanho da fonte raiz). */
+  margin-bottom: 1rem;/* Espaçamento abaixo do título. */
+  text-align: center;/* Centraliza o texto. */
 
 }
-.service-container{
+.service-container{ /* O contêiner dos serviços */
+  padding: 2rem 1rem 2.5rem;  /*Configuração adicional da caixa*/
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 
 }
 
-.service-container .service-box{
-  padding: 2rem 1rem 2.5rem;
+.service-container .service-box{ /*Configuração Cada caixa de serviço */
+  padding: 2rem 1rem 2.5rem; 
   border-radius:1.2rem;
   text-align: center;
   border: solid 0.15rem var(--bg-color-01);
@@ -255,30 +253,41 @@ span{
   transition: 0.5s ease;
 }
 
-.service-box{
-  display: flex;
+.service-box{ /*Configuração adicional da caixa*/
+  display: flex; 
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 25rem;
-  margin-bottom: 1;
+  justify-content: space-between;/* Garante que os elementos internos fiquem espaçados*/
+  min-height: 25rem;/* Define uma altura mínima para a caixa*/
+  margin-bottom: 1;/* Aumenta ligeiramente o tamanho da caixa..*/
 }
 .service-container .service-box:hover{
-  border-color: var(--main-color);
-  transform: scale(1.01);
+  border-color: var(--main-color); /* A borda muda para a cor principal (var(--main-color)).*/
+  transform: scale(1.01);/* Aumenta ligeiramente o tamanho da caixa..*/
 
 }
-.service-box i{
-  font-size: 4.3rem;
-  color:var(--main-color)
+.service-box i{ /*Define o tamanho do ícone.*/
+  font-size: 4.3rem; /*Define o tamanho do ícone.*/
+  color:var(--main-color) 
 }
+/* Estilo para a caixa de texto, limitando o texto a 4 linhas */
 .service-box p {
-  margin: 0.5rem;
-  letter-spacing: 0.1rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: hidden;
-  text-overflow: ellipsis;
+  margin: 0.5rem; /* Define a margem ao redor do texto */
+  letter-spacing: 0.1rem; /* Define o espaçamento entre as letras */
+  display: -webkit-box; /* Usa um modelo de caixa flexível para manipulação de linhas de texto */
+  -webkit-line-clamp: 4; /* Limita o texto a 4 linhas visíveis */
+  -webkit-box-orient: vertical; /* Define a orientação das linhas para ser vertical */
+  overflow: hidden; /* Oculta o conteúdo que excede o limite definido */
+  text-overflow: ellipsis; /* Adiciona reticências (...) quando o texto é cortado */
+  text-align: justify; /* Justifica o texto, distribuindo as palavras igualmente entre as margens */
 }
+
+/* Quando a classe 'show-more' for aplicada, mostra o texto completo */
+.service-box p.show-more {
+  display: block; /* Exibe o parágrafo de forma normal (não mais como uma caixa flexível) */
+  -webkit-line-clamp: unset; /* Remove o limite de linhas quando expandido, permitindo exibir todo o conteúdo */
+  overflow: visible; /* Torna o conteúdo visível, permitindo exibir todo o texto */
+}
+
 
 .Projetos {
   background-color: var(--bg-color-02);
@@ -420,16 +429,15 @@ form textarea {
 
 /* Button */
 .btn {
-display: inline-block;
-padding: 0.7rem 1.8rem;
-background-color: var(--main-color);
-border-radius: 2rem;
-color: var(--bg-color-02);
-font-weight:600;
-letter-spacing: 0.1rem;
-transition:0.3s ease;
-margin-top: 1.2rem;
-
+  display: inline-block;
+  padding: 0.7rem 1.8rem;
+  background-color: var(--main-color);
+  border-radius: 2rem;
+  color: var(--bg-color-02);
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  transition: 0.3s ease;
+  margin-top: 1.2rem;
 }
 
 .btn:hover {
