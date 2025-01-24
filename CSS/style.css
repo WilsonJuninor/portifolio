@@ -236,6 +236,8 @@ span{
   text-align: center;/* Centraliza o texto. */
 
 }
+
+/* O contêiner dos serviços */
 .service-container{ /* O contêiner dos serviços */
   padding: 2rem 1rem 2.5rem;  /*Configuração adicional da caixa*/
   display: flex;
@@ -287,8 +289,10 @@ span{
   -webkit-line-clamp: unset; /* Remove o limite de linhas quando expandido, permitindo exibir todo o conteúdo */
   overflow: visible; /* Torna o conteúdo visível, permitindo exibir todo o texto */
 }
+/* O contêiner dos serviços */
 
 
+/* Projetos */
 .Projetos {
   background-color: var(--bg-color-02);
 }
@@ -359,6 +363,7 @@ span{
  color: var(--bg-color-02);
 
 }
+/* Projetos */
 
 form{
   max-width: 45rem;
