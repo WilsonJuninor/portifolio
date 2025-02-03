@@ -201,7 +201,7 @@ span{
 }
 
 .about{
-  background-color: var(--bg-color-02);
+  background-color: var(--bg-color-02);/* Aqui muda o fundo da tela */
 }
 
 .home-content, .about-content{
@@ -212,25 +212,27 @@ span{
 .home-content h1, .about-content h1 {
   font-weight: 1000; /* Deixa o texto do h1 bem grosso */
   line-height: 2rem; /* Define o espaçamento entre as linhas do título como 2rem */
-  font-size: 2rem; /* Define o tamanho da fonte como 2rem */
+  font-size: 2.2rem; /* Define o tamanho da fonte como 2rem */
 }
 
 
 .home-content h3, .about-content h3 {
   font-weight: 1000; /* Deixa o texto do h3 bem grosso */
-  font-size: 2.2rem; /* Define o tamanho da fonte como 1.6rem */
+  font-size: 2.5rem; /* Define o tamanho da fonte como 1.6rem */
 }
 
 .home-content p, .about-content p{
   margin-top: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.14rem;
   
   text-align: justify;
 }
+/* Fim HOME */
 
 .service h2,
 .Projetos h2,
-.contact h2{ /* ORGANIZANDO OS TEXTO QUE SÃO Considerado h2. */
+.Habilidades h2,
+.contato h2{ /* ORGANIZANDO OS TEXTO QUE SÃO Considerado h2. */
   font-size: 2.2rem; /* Define o tamanho da fonte como 2.2 rem (relativo ao tamanho da fonte raiz). */
   margin-bottom: 1rem;/* Espaçamento abaixo do título. */
   text-align: center;/* Centraliza o texto. */
@@ -238,6 +240,9 @@ span{
 }
 
 /* O contêiner dos serviços */
+.service{
+  background: var(--bg-color-02);
+}
 .service-container{ /* O contêiner dos serviços */
   padding: 2rem 1rem 2.5rem;  /*Configuração adicional da caixa*/
   display: flex;
@@ -250,7 +255,7 @@ span{
   border-radius:1.2rem;
   text-align: center;
   border: solid 0.15rem var(--bg-color-01);
-  background-color: var(--bg-color-02);
+  background-color: var(--bg-color-01);
   transition: 0.5s ease;
   position: relative; /* Define a posição do contêiner */
   overflow: hidden; /* Garante que nada ultrapasse os limites da caixa */
@@ -303,7 +308,7 @@ span{
 
 /* Projetos */
 .Projetos {
-  background-color: var(--bg-color-02);
+  background-color: var(--bg-color-01);
 }
 
 .Projetos-container{
@@ -371,6 +376,95 @@ span{
 
 }
 /* Projetos */
+
+/* Estilo geral para as caixas de habilidades */
+/* Estilo geral para as caixas de habilidades */
+/* Estilo geral para as caixas de habilidades */
+.Habilidades {
+  background: var(--bg-color-02);
+}
+
+/* Estilo geral para as caixas de habilidades */
+.Habilidades-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: stretch; /* Garante que as colunas se estiquem para ter a mesma altura */
+}
+
+/* Estilo da caixa de habilidades */
+.Habilidades-box {
+  background-color: var(--bg-color-01);
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  width: 50%; /* A largura das caixas vai ser 50% */
+  border-radius: 5px;
+  display: flex; /* Flexbox para as colunas */
+  flex-wrap: wrap; /* Permite o ajuste das colunas em várias linhas */
+  justify-content: center; /* Centraliza as colunas dentro da caixa */
+  flex: 1; /* Faz com que ambas as caixas ocupem o mesmo espaço */
+}
+
+/* Estilo das colunas */
+.Habilidades-box .coluna {
+  flex: 1; /* Faz com que as colunas ocupem a largura disponível igualmente */
+  min-width: 200px; /* Tamanho mínimo de cada coluna */
+  border-right: 3px solid #ddd; /* Linha divisória à direita da coluna */
+  padding-right: 2rem; /* Espaço antes da linha */
+  display: flex;
+  flex-direction: column; /* Organiza os itens de forma vertical */
+  align-items: center; /* Centraliza os itens dentro da coluna */
+}
+
+/* Remove a linha na última coluna */
+.Habilidades-box .coluna:last-child {
+  border-right: none;
+}
+
+/* Estilo do conteúdo das colunas */
+.Habilidades-box li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem; /* Adiciona uma margem superior para descer o texto */
+
+}
+
+/* Container dos logotipos */
+.logo-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Coloca 4 colunas */
+  gap: 50px; /* Espaçamento entre os logotipos */
+  justify-items: center; /* Alinha as imagens ao centro */
+  padding: 10px;
+}
+
+/* Estilo das imagens dos logotipos */
+.logo img {
+  width: 50px; /* Ajusta o tamanho dos logotipos */
+  height: auto;
+  animation: pulsate 2s infinite ease-in-out; /* Efeito de pulsação */
+  transition: transform 0.3s ease-in-out; /* Transição suave */
+}
+
+/* Adicionando reflexão dos logotipos */
+.logo:nth-child(even) img {
+  transform: scaleX(-1); /* Reflete as imagens que estão nas posições ímpares */
+}
+
+/* Efeito de "pulsação" dos logotipos */
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5); /* Aumenta o tamanho do logo */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 
 form{
   max-width: 45rem;

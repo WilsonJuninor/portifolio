@@ -33,4 +33,36 @@ function toggleText(button) {
     }
 }
 
-  
+const words = ["Olá, Eu sou...."];
+let charIndex = 0;
+let isDeleting = false;
+const speed = 200; // Velocidade da digitação
+const delayBetweenWords = 5000; // Tempo antes de apagar (5s)
+const restartDelay = 1000; // 20 segundos antes de reiniciar a animação
+
+function typeEffect() {
+    const dynamicText = document.getElementById("dynamic-text");
+
+    if (!isDeleting && charIndex < words[0].length) {
+        // Adiciona letras
+        dynamicText.innerHTML = words[0].substring(0, charIndex++);
+        setTimeout(typeEffect, speed);
+    } else if (isDeleting && charIndex > 0) {
+        // Remove letras
+        dynamicText.innerHTML = words[0].substring(0, charIndex--);
+        setTimeout(typeEffect, speed);
+    } else {
+        if (!isDeleting) {
+            // Espera antes de começar a apagar
+            isDeleting = true;
+            setTimeout(typeEffect, delayBetweenWords);
+        } else {
+            // Aguarda 20 segundos antes de reiniciar
+            isDeleting = false;
+            charIndex = 0;
+            setTimeout(typeEffect, restartDelay);
+        }
+    }
+}
+
+document.addEventListener("DOMContentLoaded", typeEffect);
